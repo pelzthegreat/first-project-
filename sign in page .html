@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style>
+		/* Add some basic styling */
+		body {
+			font-family: Arial, sans-serif;
+		}
+		form {
+			width: 300px;
+			margin: 0 auto;
+		}
+		label {
+			display: block;
+			margin-top: 10px;
+		}
+		input[type="text"], input[type="password"], input[type="email"] {
+			width: 100%;
+			padding: 5px;
+			margin-top: 5px;
+		}
+		input[type="submit"] {
+			background-color: blue;
+			color: white;
+			border: none;
+			padding: 5px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Sign In</h1>
+	<form action="/login" method="post">
+		<label for="email">Email or phone number</label>
+		<input type="email" id="email" name="email" value="pelumijohn3@gmail.com">
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password">
+
+		<input type="submit" value="Sign In">
+	</form>
+	<p>Forgot password?</p>
+	<label><input type="checkbox" name="remember"> Remember me</label>
+	<p>New to BASIC SHOPPING PAGE? <a href="/signup">Sign up now</a>.</p>
+	<p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="https://www.google.com/recaptcha/about/" target="_blank">Learn more</a>.</p>
+</body>
+</html>
